@@ -22,11 +22,12 @@ Then:
 ### Description
 
 The project is just a simple REST api over a single resource, `users` described as:
+
 | Attribute     | Type          | Required|
-| ------------- |:-------------:| -----:|
-| `name`      | String | `true` |
-| `age`      | Number      |   `true` |
-| `email` | String      |    `true` |
+| :-------------: |:-------------:| :-----:  |
+| `name`      	| String 		| `true`  |
+| `age`      	| Number        | `true`  |
+| `email` 		| String        | `true`  |
 
 ##
 
