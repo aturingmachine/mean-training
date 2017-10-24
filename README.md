@@ -31,7 +31,7 @@ The project is just a simple REST api over a single resource, `users` described 
 
 ##
 
-It has 4 endpoints described as such:
+It has 5 endpoints described as such:
 
 All user endpoints are behind the `/api` endpoint.
 
@@ -45,3 +45,6 @@ All user endpoints are behind the `/api` endpoint.
 
 #### `DELETE`
 `/users/:id` - Delete a user resouce matching the `:id` specified.
+
+#### `PUT`
+`/users` - Update a user based on the payload of the request
