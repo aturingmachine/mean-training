@@ -49,3 +49,11 @@ exports.delete = async (req, res) => {
   //let em know there aint no content no mo
   res.status(204).json()
 }
+
+//edit a user
+exports.update = async (req, res) => {
+  const user = await User
+  .findByIdAndUpdate(req.params.id, req.body, { new: true })
+  .exec()
+res.json({ data: user })
+}

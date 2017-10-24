@@ -20,4 +20,7 @@ router.get('/:id', catchErrors(usersController.show))
 //get rid of a boy
 router.delete('/:id', catchErrors(usersController.delete))
 
+//update a boy
+router.put('/', catchErrors(usersController.update))
+
 module.exports = router
