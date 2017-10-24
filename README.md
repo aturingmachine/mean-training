@@ -13,6 +13,8 @@ Then:
 
 `npm install`
 
+`cp .env.example .env`
+
 `npm run dev` or `npm start`
 
 `npm run dev` will start the app using [nodemon](https://github.com/remy/nodemon) which will watch for changes in the code and automatically resart the application to make development easier.
