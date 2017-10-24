@@ -5,11 +5,14 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 const index = require('./src/routes/index');
 const apiRoutes = require('./src/routes/api')
 
 const app = express();
+
+app.use(cors())
 
 // Use native ES6 Promises since mongoose's are deprecated.
 mongoose.Promise = global.Promise
